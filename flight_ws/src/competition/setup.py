@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'drone_test = competition.drone_control_test:main',
-            'test_client = competition.drone_service_test:main',
+            'drone_client = competition.drone_service_test:main',
         ],
     },
 )

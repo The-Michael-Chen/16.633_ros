@@ -18,6 +18,14 @@
         <falloff>0</falloff>
       </spot>
     </light>
+    <physics name='default_physics' default='0' type='ode'>
+<!--  the max step size is set to 0.001 by default. -->
+<!--  When increasing it, the simulation quality may suffer. -->
+      <max_step_size>0.002</max_step_size>
+<!--  this factor actually is computed by multiplying the other two -->
+      <real_time_factor>0.2</real_time_factor>
+      <real_time_update_rate>100</real_time_update_rate>
+    </physics>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -516,181 +524,181 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>292 90000000</sim_time>
-      <real_time>54 354039949</real_time>
-      <wall_time>1690654660 412662382</wall_time>
-      <iterations>54010</iterations>
-      <model name='Cutout'>
-        <pose>-2.96002 -0.149178 1 0 -0 0</pose>
+      <sim_time>998 518000000</sim_time>
+      <real_time>308 88695910</real_time>
+      <wall_time>1691118384 487264917</wall_time>
+      <iterations>306246</iterations>
+      <model name='Cutout 0'>
+        <pose>4.1966 0.07601 1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>-2.96002 -0.209178 1.87 1.5708 -0 0</pose>
+          <pose>4.1966 0.01601 1.87 -1.57079 1.57079 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>-2.96002 -0.239178 1.87 1.5708 -0 0</pose>
+          <pose>4.1966 -0.01399 1.87 -1.57079 -1.57079 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>-2.96002 -0.149178 1 0 -0 0</pose>
+          <pose>4.1966 0.07601 1 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_0'>
-        <pose>-1.80028 1.44243 1 0 0 -1.03112</pose>
+      <model name='Cutout 1'>
+        <pose>2.77232 1.95491 1 0 -0 0.841811</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>-1.85175 1.4116 1.87 1.5708 -0 -1.03112</pose>
+          <pose>2.81707 1.91494 1.87 -1.57079 1.57079 -2.29978</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>-1.87749 1.39618 1.87 1.5708 -0 -1.03112</pose>
+          <pose>2.83945 1.89496 1.87 -1.57079 -1.57079 -2.29978</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>-1.80028 1.44243 1 0 0 -1.03112</pose>
+          <pose>2.77232 1.95491 1 0 -0 0.841811</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_1'>
-        <pose>-1.9573 -1.58613 1 0 -0 0.963911</pose>
+      <model name='Cutout 2'>
+        <pose>-0.047027 2.44768 1 0 -0 1.54845</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>-1.90801 -1.62035 1.87 1.5708 -0 0.963911</pose>
+          <pose>0.012958 2.44634 1.87 -1.57079 1.57079 -1.59315</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>-1.88337 -1.63746 1.87 1.5708 -0 0.963911</pose>
+          <pose>0.04295 2.44567 1.87 -1.57079 -1.57079 -1.59315</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>-1.9573 -1.58613 1 0 -0 0.963911</pose>
+          <pose>-0.047027 2.44768 1 0 -0 1.54845</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_2'>
-        <pose>1.86244 -1.44672 1 0 0 -1.03277</pose>
+      <model name='Cutout 3'>
+        <pose>-2.74945 1.92062 1 0 0 -0.852637</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>1.81091 -1.47747 1.87 1.5708 0 -1.03277</pose>
+          <pose>-2.79463 1.88114 1.87 -1.57079 1.57079 2.28895</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>1.78515 -1.49284 1.87 1.5708 0 -1.03277</pose>
+          <pose>-2.81722 1.8614 1.87 -1.57079 -1.57079 2.28895</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>1.86244 -1.44672 1 0 0 -1.03277</pose>
+          <pose>-2.74945 1.92062 1 0 0 -0.852637</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_3'>
-        <pose>1.54523 1.69908 1 0 -0 1.05174</pose>
+      <model name='Cutout 4'>
+        <pose>-4.15422 0.060473 1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>1.59732 1.66931 1.87 1.5708 -0 1.05174</pose>
+          <pose>-4.15422 0.000473 1.87 -1.57079 1.57079 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>1.62337 1.65443 1.87 1.5708 -0 1.05174</pose>
+          <pose>-4.15422 -0.029527 1.87 -1.57079 -1.57079 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>1.54523 1.69908 1 0 -0 1.05174</pose>
+          <pose>-4.15422 0.060473 1 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_4'>
-        <pose>3.02906 0.034796 1 0 -0 0</pose>
+      <model name='Cutout 5'>
+        <pose>-2.86377 -1.79486 1 0 -0 0.724841</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>3.02906 -0.025204 1.87 1.5708 -0 0</pose>
+          <pose>-2.82399 -1.83978 1.87 -1.57079 1.57079 -2.41676</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>3.02906 -0.055204 1.87 1.5708 -0 0</pose>
+          <pose>-2.8041 -1.86223 1.87 -1.57079 -1.57079 -2.41676</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>3.02906 0.034796 1 0 -0 0</pose>
+          <pose>-2.86377 -1.79486 1 0 -0 0.724841</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_5'>
-        <pose>-0.127177 1.88697 1 0 0 -1.59264</pose>
+      <model name='Cutout 6'>
+        <pose>0.058495 -2.4226 1 0 0 -1.55123</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>-0.187163 1.88828 1.87 1.5708 0 -1.59264</pose>
+          <pose>-0.001494 -2.42377 1.87 -1.57079 1.57079 1.59036</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>-0.217156 1.88894 1.87 1.5708 0 -1.59264</pose>
+          <pose>-0.031488 -2.42436 1.87 -1.57079 -1.57079 1.59036</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>-0.127177 1.88697 1 0 0 -1.59264</pose>
+          <pose>0.058495 -2.4226 1 0 0 -1.55123</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Cutout_6'>
-        <pose>-0.157962 -1.74334 1 0 0 -1.56547</pose>
+      <model name='Cutout 7'>
+        <pose>2.80661 -1.78343 1 0 0 -0.719272</pose>
         <scale>1 1 1</scale>
         <link name='april_tag_back'>
-          <pose>-0.217961 -1.74366 1.87 1.5708 0 -1.56547</pose>
+          <pose>2.76708 -1.82857 1.87 -1.57079 1.57079 2.42232</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='april_tag_front'>
-          <pose>-0.247961 -1.74382 1.87 1.5708 0 -1.56547</pose>
+          <pose>2.74731 -1.85114 1.87 -1.57079 -1.57079 2.42232</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='cutout_obstacle'>
-          <pose>-0.157962 -1.74334 1 0 0 -1.56547</pose>
+          <pose>2.80661 -1.78343 1 0 0 -0.719272</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -801,636 +809,636 @@
       </link>
       <static>1</static>
     </model>
-    <model name='Cutout'>
-      <pose>-2.96002 -0.149178 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_0'>
-      <pose>-1.4595 1.64655 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_1'>
-      <pose>-1.53076 -1.58459 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_2'>
-      <pose>0.821029 -1.5801 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_3'>
-      <pose>0.841558 1.70805 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_4'>
-      <pose>2.41771 0.034796 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_5'>
-      <pose>-0.127177 1.88697 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='Cutout_6'>
-      <pose>-0.157962 -1.74334 1 0 -0 0</pose>
-      <static>1</static>
-      <link name='cutout_obstacle'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://cutout/meshes/cutout.stl</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_front'>
-        <pose>0 -0.09 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_front'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <link name='april_tag_back'>
-        <pose>0 -0.06 0.87 1.5708 -0 0</pose>
-        <visual name='at_visual_back'>
-          <geometry>
-            <box>
-              <size>0.22 0.22 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
-              <uri>model://Apriltag36_11_00000/materials/textures</uri>
-              <name>Apriltag36_11_00000</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>6.90379 -2.69334 7.0688 0 0.518379 2.57119</pose>
+        <pose>9.33457 -5.91998 4.4948 0 0.390796 2.356</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='Cutout 0'>
+      <pose>4.1966 0.07601 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_0/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_0/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00000/materials/textures</uri>
+              <name>Apriltag36_11_00000</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00000/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00000/materials/textures</uri>
+              <name>Apriltag36_11_00000</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 4'>
+      <pose>-4.15422 0.060473 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_4/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_4/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00004/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00004/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00004/materials/textures</uri>
+              <name>Apriltag36_11_00004</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 1'>
+      <pose>2.77232 1.95491 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_1/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_1/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00001/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00001/materials/textures</uri>
+              <name>Apriltag36_11_00001</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00001/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00001/materials/textures</uri>
+              <name>Apriltag36_11_00001</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 2'>
+      <pose>0.005717 2.4465 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_2/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_2/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00002/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00002/materials/textures</uri>
+              <name>Apriltag36_11_00002</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00002/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00002/materials/textures</uri>
+              <name>Apriltag36_11_00002</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 3'>
+      <pose>-2.74945 1.92062 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_3/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_3/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00003/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00003/materials/textures</uri>
+              <name>Apriltag36_11_00003</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00003/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00003/materials/textures</uri>
+              <name>Apriltag36_11_00003</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 5'>
+      <pose>-2.86377 -1.79486 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_5/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_5/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00005/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00005/materials/textures</uri>
+              <name>Apriltag36_11_00005</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00005/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00005/materials/textures</uri>
+              <name>Apriltag36_11_00005</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 6'>
+      <pose>0.005715 -2.42363 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_6/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_6/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00006/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00006/materials/textures</uri>
+              <name>Apriltag36_11_00006</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00006/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00006/materials/textures</uri>
+              <name>Apriltag36_11_00006</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='Cutout 7'>
+      <pose>2.80661 -1.78343 1 0 -0 0</pose>
+      <static>1</static>
+      <link name='cutout_obstacle'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_7/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cutout_7/meshes/cutout.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_front'>
+        <pose>0 -0.09 0.87 -1.57079 -1.57079 3.14159</pose>
+        <visual name='at_visual_front'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00007/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00007/materials/textures</uri>
+              <name>Apriltag36_11_00007</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='april_tag_back'>
+        <pose>0 -0.06 0.87 -1.57079 1.57079 3.14159</pose>
+        <visual name='at_visual_back'>
+          <geometry>
+            <box>
+              <size>0.22 0.22 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://Apriltag36_11_00007/materials/scripts</uri>
+              <uri>model://Apriltag36_11_00007/materials/textures</uri>
+              <name>Apriltag36_11_00007</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
   </world>
 </sdf>

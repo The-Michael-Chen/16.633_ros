@@ -11,7 +11,11 @@ setup.py
 competition/__init__.py
 competition/drone_control_test.py
 competition/drone_service_test.py
+competition.egg-info/PKG-INFO
+competition.egg-info/SOURCES.txt
+competition.egg-info/dependency_links.txt
+competition.egg-info/entry_points.txt
+competition.egg-info/requires.txt
+competition.egg-info/top_level.txt
+competition.egg-info/zip-safe
 resource/competition
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

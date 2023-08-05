@@ -1,2 +1,1 @@
-# Arbitrary Tello command:
-string cmd
+/home/ubuntu/Desktop/16.633_ros/flight_ws/build/tello_msgs/rosidl_cmake/srv/TelloAction_Request.msg

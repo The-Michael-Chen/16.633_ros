@@ -4,7 +4,8 @@
 <!-- See http://www.ros.org/reps/rep-0103.html -->
 
 <robot name="tello_8">
-
+    <origin xyz="4 0 0" rpy="0 0 3.14" />
+    <!-- 4 -3 0 0 0 1.57 for a regular initialization -->
     <!-- Materials -->
     <material name="gray">
         <color rgba="0.5 0.5 0.5 1.0"/>

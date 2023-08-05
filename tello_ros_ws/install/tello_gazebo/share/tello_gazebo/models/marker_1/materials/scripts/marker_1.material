@@ -1,13 +1,1 @@
-material ArucoVisualMarker1/Marker
-{
-	technique
-	{
-		pass
-		{
-			texture_unit
-			{
-				texture aruco_mark_1.png
-			}
-		}
-	}
-}
+/home/ubuntu/Desktop/16.633_ros/tello_ros_ws/src/tello_ros/tello_gazebo/models/marker_1/materials/scripts/marker_1.material
