@@ -49,7 +49,7 @@ class TestClient(Node):
 
     def send_request(self):
         x, y, z, yaw = fly_drone(self.frame, self.dist)
-        command = f'rc {y} {-x} {-z} {yaw}'
+        command = f'rc {y} {x} {z} {yaw}'
         print(command)
         print("that was the command yeet")
         self.req.cmd = command
