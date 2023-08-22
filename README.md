@@ -21,15 +21,16 @@ This class uses Tello drones to autonomously navigate around a track. The track 
 10. Visit this link [https://github.com/clydemcqueen/tello_ros] and follow the instructions under install "tello_ros".
 11. To run the simulation, click on "tello_gazebo" on the github repo page and follow the instructions there. 
 
-
-## Issue Log:
+<details>
+<summary>Python issue log</summary>
 1. Could not download April Tags plugins:
 - Solution: Downgrade python to version 3.7 or 3.6 using a virtual environment 
 2. Flow point drifting:
 - Solution 1: Make the Flow point be closer to the top of the screen because when the drone flys forwards you are pointing downwards
 - Solution 2: Correct your x, y position using the tags before using the flow point 
 - Solution 3: Make sure the surroundings are not one plain surface but have distinguishable things like lines or stark different colors to place flow points on 
-3. failing to grab video stream: 
+3. failing to grab video stream:
+</details>
 
 <details>
 <summary>How to log</summary>
