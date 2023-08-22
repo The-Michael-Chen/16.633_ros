@@ -1,5 +1,5 @@
-# 16.633_ros
-This class uses Tello drones to autonomously navigate around a track. The track composes of hoops with april tags that the drones must fly through. This project details a progression of assignments that lead up to the final competition. The assignments can be found in the neet_ass folder as html files. The course covers concepts like optical flow, pinhole camera model, image transformations, and PID controls. This github pagee is specifically for starting the simulation of the drone inside Gazebo for working with ROS2. 
+# 16.633_ros: The NEET Autonomous Drone Class
+This class uses Tello drones to autonomously navigate around a track. The track composes of hoops with april tags that the drones must fly through. This project details a progression of assignments that lead up to the final competition. The assignments can be found in the neet_ass folder as html files. The course covers concepts like optical flow, pinhole camera model, image transformations, and PID controls. This github page is specifically for starting the simulation of the drone inside Gazebo for working with ROS2. 
 
 ## Class Package installation instructions:
 1. pip install virtualenv
@@ -9,16 +9,17 @@ This class uses Tello drones to autonomously navigate around a track. The track 
 5. pip install -r requirements.txt
 
 ## ROS Setup Process: 
-1. Download docker 
-2. Visit this link https://github.com/Tiryoh/docker-ros-desktop-vnc and follow the instructions to pull the docker image
-3. open terminal and navigate to the directory of your project and cloned directory
-4. Run the following command to create a docker container:
-`docker run -it -p 6080:80 -v $(pwd):/home/ubuntu/Desktop/<project_nam> --name <project_name> tiryoh/ros2-desktop-vnc:foxy`
-5. open the docker container in your browser by clicking the port in docker desktop
-6. When inside the docker container, open a terminal and navigate to the project directory in desktop
-7. navigate to the tello_ros_ws and run `source install/setup.bash`
-8. run `colcon build --symlink install`
-9. Visit this link https://github.com/clydemcqueen/tello_ros and follow the instructions under install "tello_ros". To run the simulation, click on "tello_gazebo" and follow the instructions there. 
+1. Download Docker Desktop [https://www.docker.com/products/docker-desktop/]
+2. In your terminal, run `docker pull tiryoh/ros-desktop-vnc:foxy`. You should see an image appear inside the Docker Images tab on your Docker Desktop app
+3. Navigate to the project directory
+4. To create a Docker container run `docker run -it -p 6080:80 -v $(pwd):/home/ubuntu/Desktop/<project_name> --name <project_name> tiryoh/ros2-desktop-vnc:foxy`
+5. Open the docker container in your browser by clicking the port in docker desktop
+6. When inside the docker container, open a terminal and navigate to the project directory in your virtual desktop
+7. Run git pull this repository: [https://github.com/clydemcqueen/tello_ros]
+8. Navigate to the tello_ros_ws and run `source install/setup.bash`
+9. Run `colcon build --symlink install`
+10. Visit this link [https://github.com/clydemcqueen/tello_ros] and follow the instructions under install "tello_ros".
+11. To run the simulation, click on "tello_gazebo" on the github repo page and follow the instructions there. 
 
 
 ## Issue Log:
