@@ -31,7 +31,8 @@ This class uses Tello drones to autonomously navigate around a track. The track 
 - Solution 3: Make sure the surroundings are not one plain surface but have distinguishable things like lines or stark different colors to place flow points on 
 3. failing to grab video stream: 
 
-## HOW TO NOTES:
+<details>
+  <summary>Issue Log/summary>
     - custom model import tutorial: [https://www.youtube.com/watch?v=fwoTLfypIMw](https://www.youtube.com/watch?v=fwoTLfypIMw)
         - [https://classic.gazebosim.org/tutorials?tut=build_model#Step3:AddtothemodelSDFfile](https://classic.gazebosim.org/tutorials?tut=build_model#Step3:AddtothemodelSDFfile)
         - 
@@ -55,3 +56,4 @@ This class uses Tello drones to autonomously navigate around a track. The track 
         - [https://ceti.pages.st.inf.tu-dresden.de/robotics/howtos/SimulationSpeed.html](https://ceti.pages.st.inf.tu-dresden.de/robotics/howtos/SimulationSpeed.html)
     - rc control on the drone
         - rc forward, left, up
+</details>
