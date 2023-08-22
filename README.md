@@ -8,18 +8,21 @@ This class uses Tello drones to autonomously navigate around a track. The track 
 4. git clone this repository follow instructions on the github page
 5. pip install -r requirements.txt
 
-## ROS Setup Process: 
+## ROS2 Setup Process: 
 1. Download Docker Desktop [https://www.docker.com/products/docker-desktop/]
 2. In your terminal, run `docker pull tiryoh/ros-desktop-vnc:foxy`. You should see an image appear inside the Docker Images tab on your Docker Desktop app
 3. Navigate to the project directory
 4. To create a Docker container run `docker run -it -p 6080:80 -v $(pwd):/home/ubuntu/Desktop/<project_name> --name <project_name> tiryoh/ros2-desktop-vnc:foxy`
 5. Open the docker container in your browser by clicking the port in docker desktop
 6. When inside the docker container, open a terminal and navigate to the project directory in your virtual desktop
-7. Run git pull this repository: [https://github.com/clydemcqueen/tello_ros]
+7. Run git pull this repository
 8. Navigate to the tello_ros_ws and run `source install/setup.bash`
 9. Run `colcon build --symlink install`
 10. Visit this link [https://github.com/clydemcqueen/tello_ros] and follow the instructions under install "tello_ros".
-11. To run the simulation, click on "tello_gazebo" on the github repo page and follow the instructions there. 
+11. To run the simulation, click on "tello_gazebo" on the github repo page and follow the instructions there.
+12. With the simulation running, in a separate terminal to the flight_ws and run `source install/setup.bash` and then run `colcon build --symlink install`
+13. Run `ros2 run competition drone_client`
+14. Now you should see the drone takeoff in a simulated environment
 
 <details>
 <summary>Python Issue Log</summary>
