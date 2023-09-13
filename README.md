@@ -17,7 +17,7 @@ This class uses Tello drones to autonomously navigate around a track. The track 
 6. When inside the docker container, open a terminal and navigate to the project directory in your virtual desktop
 7. Run git pull this repository
 8. Navigate to the tello_ros_ws and run `source install/setup.bash`
-9. Run `colcon build --symlink install`
+9. Run `colcon build --symlink-install`
 10. Visit this link [https://github.com/clydemcqueen/tello_ros] and follow the instructions under install "tello_ros".
 11. To run the simulation, click on "tello_gazebo" on the github repo page and follow the instructions there.
 12. With the simulation running, in a separate terminal to the flight_ws and run `source install/setup.bash` and then run `colcon build --symlink install`
