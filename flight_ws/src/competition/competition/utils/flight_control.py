@@ -23,10 +23,10 @@ target_dist = 0.0 # desired distance from tag
 # remember left-right and up-down error is larger
 # than forward-back error since the first two are
 # in pixels and not meters!
-P_z = 11
+P_z = 0.0 #7 #11
  # forward-back gain
-P_x = 0.12 # left-right gain
-P_y = 0.27 # up-down gain
+P_x = 0.025 #0.12 # left-right gain
+P_y = 0.01 # 0.27 # up-down gain
 target_tag = "0" # tag to target
 target_tags = ["0", "1", "2", "3", "4", "5", "6", "7"]
 tag_ind = 0
@@ -91,17 +91,23 @@ def get_point_below_tag(T_camera_tag, meters_below, K):
     T_tag_camera[1,3] -= meters_below
     # convert back to being wrt the camera frame
     T_camera_tag = np.linalg.inv(T_tag_camera)
-    
+    R_body_camera = np.array([[0, 0, 1], [-1, 0, 0], [0, -1, 0]])
+    print(R_body_camera.shape)
+    print(T_camera_tag.shape)
+    #T_body_tag = R_body_camera @ T_camera_tag[0:3, 3:]
     ###### TODO fill in here ##########
     # compute the 2D location of the target point in the image plane
     # hint: T_camera_tag[0:3,3:] is the 3D point of the target wrt the camera
     # hint: don't forget to return a 2D point and not a 3D point
     # px = T_camera_tag[0:3,3:]/T_camera_tag[0:3,3:][2]
     x_img = K@T_camera_tag[0:3,3:]
+    #x_img = K@T_body_tag
     x_img = x_img/x_img[2]
     x_img = x_img[0:2, :]
     px = int(x_img[0][0])
     py = int(x_img[1][0])
+    print(px)
+    print("matrix transform worked hopefully")
     return (px, py)
     
     ##################################
@@ -227,6 +233,7 @@ def fly_drone(frame, dist):
             print(left_right_vel, forward_vel, up_down_vel, yaw_velocity)
             return 0, 0, 0, 0
     else:
+        print("WE SHOULD BE HERE DOG")
         # if we don't see the tag, do the safe thing and stop the drone
         if flow_point != None:
             # if abs(flow_point[0] - prev_flow_point[0]) > 10 and prev_flow_point != None: # to prevent the flow point from changing drastically
@@ -241,6 +248,7 @@ def fly_drone(frame, dist):
             left_right_vel = get_left_right_control(cx, x, gain=P_x)
             up_down_vel = get_up_down_control(cy, y, gain=P_y)
             yaw_velocity = 0
+            print(dist)
             if check_crossed_target(dist):
                 tracking_flow = False
                 #tracking_flow = True # tracking the flow point 

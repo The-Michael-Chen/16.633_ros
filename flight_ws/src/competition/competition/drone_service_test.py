@@ -48,10 +48,12 @@ class TestClient(Node):
             self.get_logger().error(f'Service call failed: {e}')
 
     def send_request(self):
-        x, y, z, yaw = fly_drone(self.frame, self.dist)
-        command = f'rc {y} {x} {z} {yaw}'
+        left_right_vel, forward_vel, up_down_vel, yaw_velocity= fly_drone(self.frame, self.dist)
+        #command = f'rc {forward_vel} {-left_right_vel} {-up_down_vel} {yaw_velocity}'
+        
+        command = f'rc {forward_vel} {-left_right_vel} {-up_down_vel} {yaw_velocity}'
         print(command)
-        print("that was the command yeet")
+        print("that was the command")
         self.req.cmd = command
         self.future = self.cli.call_async(self.req)
         # rclpy.spin_until_future_complete(self, self.future)
